@@ -1,2 +1,2 @@
 # tts
-A hacky wrapper for GNUStep's "say" command
+A hacky wrapper for my augmentative communication needs.
