@@ -1,7 +1,7 @@
 // tts.cpp
 // by Daniel Alexander <xandernaut@gmail.com>
 
-/* a very hacky wrapper for the "say" command; I use this as an
+/* a hacky wrapper for espeak; I use this as an
 assistive communication method while nonverbal. */
 
 # include <stdio.h>
@@ -14,7 +14,7 @@ int tts(){
 string input;
 cout << "say> ";
 getline(cin, input);
-string command = "say \"" + input + "\"";
+string command = "espeak -v en+klatt3 \"" + input + "\"";
 //std::cout << input << endl;
 system(command.c_str());
 return 0;
