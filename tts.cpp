@@ -1,5 +1,5 @@
 // tts.cpp
-// by Daniel Alexander <xandernaut@gmail.com>
+// by Daneel Alexander <xandernaut@gmail.com>
 
 /* a hacky wrapper for espeak; I use this as an
 assistive communication method while nonverbal. */
@@ -15,7 +15,6 @@ string input;
 cout << "say> ";
 getline(cin, input);
 string command = "espeak -v en+klatt3 \"" + input + "\"";
-//std::cout << input << endl;
 system(command.c_str());
 return 0;
 }
